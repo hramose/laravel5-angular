@@ -1,25 +1,62 @@
 var pages = [
 	{
-		name		: 'yonetim',
-		title		: 'Yönetim',
-		url 		: '', 
-		templateUrl : '',
+		name		: 'users_group',
+		title		: 'Users',
 		icon		: 'fa-wrench',
 		subMenu		: [
 			{
 			name		: 'users',
-			title		: 'Kullanıcılar',
+			title		: 'Users',
 			url 		: '/users', 
 			templateUrl : 'views/users.html',
-			icon		: 'fa-user'
+			prefix		: 'users',
+			icon		: 'fa-user',
+			fields		: [
+					{
+						'name'		:'username', 
+						'editable' 	: false
+					},
+					{
+						'name'		:'name', 
+						'editable' 	: true
+					},
+					{
+						'name'		:'email', 
+						'editable' 	: true
+					},
+					{
+						'name'		:'password', 
+						'editable' 	: false
+					},
+					{
+						'name'		:'role', 
+						'editable' 	: true,
+						lookup : {
+							url 	: "roles/data",
+							itemUrl : "roles/item",
+							field 	: "name"
+						}
+					}
+				]
 			},
 			{
 			name		: 'roles',
-			title		: 'Yetkiler',
+			title		: 'Roles',
 			url 		: '/roles', 
 			templateUrl : 'views/roles.html',
-			icon		: 'fa-users'
-			}
+			prefix		: 'roles',
+			icon		: 'fa-users',
+			fields		: [
+					{
+						'name'		:'name', 
+						'editable' 	: false
+					},
+					{
+						'name'		:'permissions', 
+						'editable' 	: true
+					}
+				]
+			},
 		]
 	}
 ];

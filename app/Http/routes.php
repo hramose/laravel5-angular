@@ -19,6 +19,11 @@ Route::post('login', ['as' => 'login-post', 'uses' => 'Auth\AuthController@postL
 Route::get('logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@getLogout']);
 
 
-Route::post('authCheck', function(){
+Route::get('authCheck', function(){
 	return Response::json(Auth::check());
 });
+
+Route::controller('settings','SettingsController');
+Route::controller('users','UsersController');
+Route::controller('roles','RolesController');
+

@@ -21,14 +21,14 @@
 						<div class="form-group">
 							<label class="col-md-4 control-label">{{ trans('auth.username') }}</label>
 							<div class="col-md-8">
-								<input type="text" class="form-control" name="username" value="laravel">
+								<input type="text" class="form-control" name="username">
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label class="col-md-4 control-label">{{ trans('auth.password') }}</label>
 							<div class="col-md-8">
-								<input type="password" class="form-control" name="password" value="secret">
+								<input type="password" class="form-control" name="password">
 							</div>
 						</div>
 

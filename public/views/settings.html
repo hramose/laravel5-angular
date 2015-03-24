@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="alert alert-danger" ng-show='error === 1'>
+        <ul>
+            <li ng-repeat='e in errors'>
+                <% e %>
+            </li>
+        </ul>
+    </div>
+
+    <div class="alert alert-success" ng-show='success === 1'>
+        <% successMsg %>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header"><% lang.settings %></h2>
+    </div>
+</div>
+
+<div class="edit">
+    <form name="dataForm" novalidate>
+	    <div class="row">
+	        <div class="col-lg-6">
+	        </div>
+	        <div class="col-lg-6 form-btn">
+	            
+	        </div>
+	    </div>
+
+	    <div class="special-form">
+	        <div class="fieldset clearfix">
+	            <label><% lang.settings_old_password %></label>
+	            <label class="full">
+	                <input type="password" ng-model="settings.old_password" class="form-control"> 
+	            </label>
+	        </div>
+	        <div class="fieldset clearfix">
+	            <label><% lang.settings_new_password %></label>
+	            <label class="full">
+	                <input type="password" ng-model="settings.new_password" class="form-control"> 
+	            </label>
+	        </div>
+	        <div class="fieldset clearfix">
+	            <label><% lang.settings_new_again %></label>
+	            <label class="full">
+	                <input type="password" ng-model="settings.new_again" class="form-control"> 
+	            </label>
+	        </div>
+	        
+	        <div class="fieldset clearfix">
+	        	<label></label>
+	        	<a class="btn btn-info" ng-click='saveSettings()'><% lang.saveBtn %></a>
+	        </div>
+	    </div>
+    </form>
+</div>

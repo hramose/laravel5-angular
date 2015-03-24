@@ -3,6 +3,7 @@
 
 body {
     background-color: #f8f8f8;
+    zoom : .9;
 }
 
 #wrapper {
@@ -348,4 +349,76 @@ table.dataTable thead .sorting:after {
 
 .panel-yellow a:hover {
     color: #df8a13;
+}
+
+
+.red { color: red; }
+.red:hover { color: #660000; }
+
+.st-sort-ascent:before{
+    content: '\25B2';
+}
+
+.st-sort-descent:before{
+    content: '\25BC';
+}
+
+.select-page {
+  width: 50px;
+  text-align: center;
+}
+
+.pagination li a input {
+  padding: 0;
+  margin: -5px 0;
+}
+
+.page-header { margin-top: 20px; margin-bottom: 4px; }
+
+/*Form Elements*/
+
+.special-form { border: 1px solid #dddddd; background: #fff; color: #000; margin-bottom: 50px; }
+.sub-header { padding: 20px 10px; font-size: 16px; color: #000; font-weight: bold; }
+.listTable { margin-top: 10px; padding-bottom: 50px; }
+
+.fieldset {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px dotted #C1C1C1;
+}
+
+.fieldset label {
+    display: block;
+    width: 17%;
+    float: left;
+    margin-top: 3px;
+    font-weight: normal;
+}
+.fieldset label.full {
+    margin-top: 3px;
+    width: 83%;
+    font-weight: bold;
+}
+.fieldset label.full input {
+    font-weight: normal;
+}
+
+.fieldset ul li div {  border: 1px dotted #ccc; font-weight: normal; padding: 8px; margin: 4px; }
+.fieldset ul li div h4 { margin: 0; padding: 0; }
+.fieldset ul li label {  width: 100px; }
+
+.form-btn { text-align: right; margin-top: 12px; }
+
+.btn { border: none; padding: 6px 20px; }
+.form-control { height: 33px; }
+select.form-control  { width: auto; }
+
+.alert { margin-top: 10px; }
+
+.btn.btn-danger.fa { padding:6px 10px;  }
+.btn.btn-info.fa { padding:6px 10px;  }
+.btn.btn-warning.fa { padding:6px 10px;  }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
 }

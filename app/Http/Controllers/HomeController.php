@@ -42,7 +42,8 @@ class HomeController extends Controller {
 		*/
 		JavaScript::put([
 	        'lang' => Lang::get('app'),
-	        'siteUrl' => config('app.url')
+	        'siteUrl' => config('app.url'),
+	        'logedin' => Auth::user()->username
 	    ]);
 
 		return view('app');
