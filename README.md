@@ -44,7 +44,7 @@ Configure .env file
 ```
 APP_URL
 ```
-Change this to your home folder.
+Change this to your public folder.
 
 ```
 APP_LANG
