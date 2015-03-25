@@ -77,7 +77,9 @@ chmod 777 -R storage
 ###Step 7
 
 Login to application
+
 Username : admin
+
 Password : admin
 
 
